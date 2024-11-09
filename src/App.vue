@@ -12,11 +12,13 @@ function dizOi(nome) {
 const enderecoDaImg = "https://www.tfd.nl/wp-content/uploads/2023/01/image-9-1024x768.png"
 
 const botaoEstaDesabilitado = false
+
+const = gostaDeStarTrek = true,
 </script>
 
 <template>
 <h1>{{ dizOi("paulo") }}</h1>
-<img :src="enderecoDaImg" alt="star-trek descovery">
+<img v-if="gostaDeStarTrek" :src="enderecoDaImg" alt="star-trek descovery">
 
 <button :desabled="botaoEstaDesabilitado">Enviar Mensagem</button>
 </template>
